@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0997F26-D101-456C-BA57-A60293326F44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IP</RootNamespace>
+    <AssemblyName>IP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGroups.Designer.cs">
+      <DependentUpon>AddGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInstructor.Designer.cs">
+      <DependentUpon>AddInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLecturer.Designer.cs">
+      <DependentUpon>AddLecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLectureSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLectureSessions.Designer.cs">
+      <DependentUpon>AddLectureSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPracticalSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPracticalSessions.Designer.cs">
+      <DependentUpon>AddPracticalSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanelEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanelEntry.Designer.cs">
+      <DependentUpon>AdminPanelEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDegree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDegree.Designer.cs">
+      <DependentUpon>AddDegree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceAllocationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocationDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAllocationDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Tstlbs.cs" />
+    <Compile Include="viewLectureSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewLectureSchedule.Designer.cs">
+      <DependentUpon>viewLectureSchedule.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddGroups.resx">
+      <DependentUpon>AddGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInstructor.resx">
+      <DependentUpon>AddInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLecturer.resx">
+      <DependentUpon>AddLecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLectureSessions.resx">
+      <DependentUpon>AddLectureSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPracticalSessions.resx">
+      <DependentUpon>AddPracticalSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanelEntry.resx">
+      <DependentUpon>AdminPanelEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDegree.resx">
+      <DependentUpon>AddDegree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="viewLectureSchedule.resx">
+      <DependentUpon>viewLectureSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ResourceAllocationDataSet.xsc">
+      <DependentUpon>ResourceAllocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet.xss">
+      <DependentUpon>ResourceAllocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet1.xsc">
+      <DependentUpon>ResourceAllocationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet1.xss">
+      <DependentUpon>ResourceAllocationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet10.xsc">
+      <DependentUpon>ResourceAllocationDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet10.xss">
+      <DependentUpon>ResourceAllocationDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet11.xsc">
+      <DependentUpon>ResourceAllocationDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet11.xss">
+      <DependentUpon>ResourceAllocationDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet12.xsc">
+      <DependentUpon>ResourceAllocationDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet12.xss">
+      <DependentUpon>ResourceAllocationDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet13.xsc">
+      <DependentUpon>ResourceAllocationDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet13.xss">
+      <DependentUpon>ResourceAllocationDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet14.xsc">
+      <DependentUpon>ResourceAllocationDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet14.xss">
+      <DependentUpon>ResourceAllocationDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet2.xsc">
+      <DependentUpon>ResourceAllocationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet2.xss">
+      <DependentUpon>ResourceAllocationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet3.xsc">
+      <DependentUpon>ResourceAllocationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet3.xss">
+      <DependentUpon>ResourceAllocationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet4.xsc">
+      <DependentUpon>ResourceAllocationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet4.xss">
+      <DependentUpon>ResourceAllocationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet5.xsc">
+      <DependentUpon>ResourceAllocationDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet5.xss">
+      <DependentUpon>ResourceAllocationDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet6.xsc">
+      <DependentUpon>ResourceAllocationDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet6.xss">
+      <DependentUpon>ResourceAllocationDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet7.xsc">
+      <DependentUpon>ResourceAllocationDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet7.xss">
+      <DependentUpon>ResourceAllocationDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet8.xsc">
+      <DependentUpon>ResourceAllocationDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet8.xss">
+      <DependentUpon>ResourceAllocationDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet9.xsc">
+      <DependentUpon>ResourceAllocationDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceAllocationDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceAllocationDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceAllocationDataSet9.xss">
+      <DependentUpon>ResourceAllocationDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\IP.ServiceReference1.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\Service1.wsdl" />
+    <None Include="Service References\ServiceReference1\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green uni new logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

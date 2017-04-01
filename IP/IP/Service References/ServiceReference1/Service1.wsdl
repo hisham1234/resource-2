@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59259/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59259/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59259/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IP_WcfService" />
+      <xsd:import schemaLocation="http://localhost:59259/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addLecturer_InputMessage">
+    <wsdl:part name="parameters" element="tns:addLecturer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addLecturer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addLecturerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewLecturer_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewLecturer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewLecturer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewLecturerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addGrp_InputMessage">
+    <wsdl:part name="parameters" element="tns:addGrp" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addGrp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addGrpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewGroup" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addIns_InputMessage">
+    <wsdl:part name="parameters" element="tns:addIns" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addIns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addInsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewIns_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewIns" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewIns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewInsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewLabs_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewLabs" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewLabs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewLabsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addPracSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:addPracSession" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addPracSession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addPracSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addPracDates_InputMessage">
+    <wsdl:part name="parameters" element="tns:addPracDates" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addPracDates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addPracDatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addLecSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:addLecSession" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addLecSession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addLecSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addLecDates_InputMessage">
+    <wsdl:part name="parameters" element="tns:addLecDates" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addLecDates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addLecDatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewHalls_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewHalls" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewHalls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewHallsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewLectureSessions_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewLectureSessions" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewLectureSessions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewLectureSessionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewLectureSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewLectureSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewLectureSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewLectureScheduleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addLecturer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addLecturer" message="tns:IService1_addLecturer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addLecturerResponse" message="tns:IService1_addLecturer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewLecturer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewLecturer" message="tns:IService1_viewLecturer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewLecturerResponse" message="tns:IService1_viewLecturer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addGrp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addGrp" message="tns:IService1_addGrp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addGrpResponse" message="tns:IService1_addGrp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewGroup" message="tns:IService1_viewGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewGroupResponse" message="tns:IService1_viewGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addIns">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addIns" message="tns:IService1_addIns_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addInsResponse" message="tns:IService1_addIns_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewIns">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewIns" message="tns:IService1_viewIns_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewInsResponse" message="tns:IService1_viewIns_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewLabs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewLabs" message="tns:IService1_viewLabs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewLabsResponse" message="tns:IService1_viewLabs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addPracSession">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addPracSession" message="tns:IService1_addPracSession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addPracSessionResponse" message="tns:IService1_addPracSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addPracDates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addPracDates" message="tns:IService1_addPracDates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addPracDatesResponse" message="tns:IService1_addPracDates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addLecSession">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addLecSession" message="tns:IService1_addLecSession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addLecSessionResponse" message="tns:IService1_addLecSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addLecDates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addLecDates" message="tns:IService1_addLecDates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addLecDatesResponse" message="tns:IService1_addLecDates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewHalls">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewHalls" message="tns:IService1_viewHalls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewHallsResponse" message="tns:IService1_viewHalls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewLectureSessions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewLectureSessions" message="tns:IService1_viewLectureSessions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewLectureSessionsResponse" message="tns:IService1_viewLectureSessions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewLectureSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewLectureSchedule" message="tns:IService1_viewLectureSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewLectureScheduleResponse" message="tns:IService1_viewLectureSchedule_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLecturer">
+      <soap:operation soapAction="http://tempuri.org/IService1/addLecturer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewLecturer">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewLecturer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addGrp">
+      <soap:operation soapAction="http://tempuri.org/IService1/addGrp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewGroup">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addIns">
+      <soap:operation soapAction="http://tempuri.org/IService1/addIns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewIns">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewIns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewLabs">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewLabs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPracSession">
+      <soap:operation soapAction="http://tempuri.org/IService1/addPracSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPracDates">
+      <soap:operation soapAction="http://tempuri.org/IService1/addPracDates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLecSession">
+      <soap:operation soapAction="http://tempuri.org/IService1/addLecSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLecDates">
+      <soap:operation soapAction="http://tempuri.org/IService1/addLecDates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewHalls">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewHalls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewLectureSessions">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewLectureSessions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewLectureSchedule">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewLectureSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:59259/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
